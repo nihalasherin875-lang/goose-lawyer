@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --parchment: #EFE6D2;
+    --parchment-dark: #E3D7B8;
+    --ink: #1C1A15;
+    --green: #26402F;
+    --green-dark: #17281D;
+    --red: #A5321F;
+    --gold: #D9A441;
+    --line: rgba(28, 26, 21, 0.22);
+  }
+
+  body {
+    font-family: 'Courier Prime', monospace;
+    background-color: var(--green-dark);
+    background-image: 
+      radial-gradient(circle at 15% 20%, rgba(217, 164, 65, 0.04), transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(255, 255, 255, 0.02), transparent 40%);
+    color: var(--ink);
+  }
+}
+
+.font-serif-heading {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-mono-legal {
+  font-family: 'Courier Prime', monospace;
+}
+
+/* Aged document paper textures */
+.bg-parchment {
+  background-color: var(--parchment);
+}
+
+.bg-parchment-dark {
+  background-color: var(--parchment-dark);
+}
+
+.border-legal {
+  border-color: var(--line);
+}
+
+/* Rubber Stamp Styling */
+.stamp-seal {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  mask-image: radial-gradient(circle at 50% 50%, black 75%, transparent 100%);
+}
+
+/* Custom scrollbar for cross-examination notes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(28, 26, 21, 0.06);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(28, 26, 21, 0.25);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(28, 26, 21, 0.45);
+}
+

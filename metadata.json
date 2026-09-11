@@ -1,0 +1,7 @@
+{
+  "name": "Goose Lawyer",
+  "description": "Fictional, humorous legal analysis of facial expressions and vibes powered by the Avian Court of Jurisprudence and Gemini vision.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
